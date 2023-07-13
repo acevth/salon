@@ -12,6 +12,7 @@
   }
 
   .box {
+      position: relative;
       height: 10vh;
       display: flex;
       justify-content: space-between;
@@ -19,7 +20,18 @@
       padding: 0 10%;
   }
 
+  .Plain {
+      margin-left: 40px;
+      position: absolute;
+      z-index: -1;
+      background-color: black;
+      width: 400px;
+      top: 0;
+      bottom: 0;
+  }
+
   .box h1 {
+      color: aliceblue;
       font-size: 2.5em;
       letter-spacing: 2px;
   }
@@ -46,6 +58,19 @@
       color: aliceblue;
   }
 
+  .icon {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2em;
+  }
+
+  .fa-bars {
+      font-size: 1.2em;
+      margin-left: 20px;
+      display: none;
+  }
+
   .main {
       padding: 40px 10%;
       display: flex;
@@ -54,9 +79,9 @@
   }
 
   .main img {
-    height: 500px;
-    object-fit: cover;
-    object-position: top;
+      height: 600px;
+      object-fit: cover;
+      object-position: top;
   }
 
   .main img,
@@ -70,12 +95,14 @@
       justify-content: center;
       gap: 48px;
   }
+
   .main span {
       color: gray;
   }
-  .text a{
-    padding: 10px 30px;
-    background-color: black;
-    color: aliceblue;
-    width: max-content;
+
+  .text a {
+      padding: 10px 30px;
+      background-color: black;
+      color: aliceblue;
+      width: max-content;
   }

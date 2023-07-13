@@ -1,0 +1,41 @@
+@media (max-width:900px) {
+    .fa-bars {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .navbar {
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: absolute;
+        top: 50px;
+        right: 58px;
+        width: 250px;
+        font-size: 1.2em;
+        transition: .3s;
+        padding: 20px;
+        height: 0px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .navbar a {
+        background: unset !important;
+        color: #fff;
+    }
+
+    .main {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .main img,
+    .main .text {
+        width: 100%;
+    }
+}
